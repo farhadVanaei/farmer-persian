@@ -7,7 +7,7 @@ SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
 
 # The SQLAlchemy connection string.
 # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql://root:p5kplse@localhost/farmer'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:1234@localhost/farmer'
 # SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:1234@localhost/farmer'
 
 

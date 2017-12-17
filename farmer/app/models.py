@@ -8,11 +8,11 @@ You can use the extra Flask-AppBuilder fields and Mixin's
 AuditMixin will add automatic timestamp of created and modified by who
 """
 
-# assoc_users_field = Table('user_field', Model.metadata,
-#                          Column('id', Integer, primary_key=True),
-#                          Column('user_id', Integer, ForeignKey('user.id')),
-#                          Column('field_id', Integer, ForeignKey('field.id'))
-#                          )
+assoc_Farmer_field = Table('Farmer_field', Model.metadata,
+                         Column('id', Integer, primary_key=True),
+                         Column('Farmer_id', Integer, ForeignKey('farmer.id')),
+                         Column('field_id', Integer, ForeignKey('field.id'))
+                         )
 
 
 class Field(Model):
@@ -35,7 +35,7 @@ class Location(Model):
         return self.State + " - " + self.City + " - " + self.Part + " - " + self.village
 
 
-class User(Model):
+class Farmer(Model):
     id = Column(Integer, primary_key=True)
     username = Column(String(450))
     password = Column(String(450))
@@ -47,7 +47,7 @@ class User(Model):
     email = Column(String(450))
     location_id = Column(Integer, ForeignKey('location.id'), nullable=False)
     Location = relationship("Location")
-    # fields = relationship('Field', secondary=assoc_users_field, backref='User')
+    fields = relationship('Field', secondary=assoc_Farmer_field, backref='Farmer')
 
     def __repr__(self):
         return self.name+" "+self.family
@@ -55,8 +55,8 @@ class User(Model):
 
 class Request(Model):
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey('user.id'), nullable=False)
-    user_request = relationship("User")
+    Farmer_id = Column(Integer, ForeignKey('farmer.id'), nullable=False)
+    Farmer_request = relationship("Farmer")
 
 
 # class UserField(Model):

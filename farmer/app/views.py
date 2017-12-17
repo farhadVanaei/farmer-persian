@@ -2,7 +2,7 @@ from flask import render_template
 from flask.ext.appbuilder.models.sqla.interface import SQLAInterface
 from flask.ext.appbuilder import ModelView
 from app import appbuilder, db
-from app.models import Field,Location,User
+from app.models import Field,Location,Farmer
 
 
 
@@ -14,7 +14,7 @@ class locationView(ModelView):
     datamodel = SQLAInterface(Location)
 
 class UserView(ModelView):
-    datamodel = SQLAInterface(User)
+    datamodel = SQLAInterface(Farmer)
 
 """
     Create your Views::
