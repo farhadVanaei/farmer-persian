@@ -18,10 +18,10 @@ CSRF_ENABLED = True
 # GLOBALS FOR APP Builder 
 #------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Farmer"
+APP_NAME = ""
 
 # Uncomment to setup Setup an App icon
-#APP_ICON = "static/img/logo.jpg"
+APP_ICON = basedir + "/app/static/logo.png"
 
 #----------------------------------------------------
 # AUTHENTICATION CONFIG
@@ -58,11 +58,11 @@ AUTH_TYPE = AUTH_DB
 # Babel config for translations
 #---------------------------------------------------
 # Setup default language
-# BABEL_DEFAULT_LOCALE = 'en'
+BABEL_DEFAULT_LOCALE = 'fa'
 # Your application default translation path
 # BABEL_DEFAULT_FOLDER = 'translations'
 # The allowed translation for you app
-# LANGUAGES = {
+LANGUAGES = {
     # 'en': {'flag':'gb', 'name':'English'},
     # 'pt': {'flag':'pt', 'name':'Portuguese'},
     # 'pt_BR': {'flag':'br', 'name': 'Pt Brazil'},
@@ -70,8 +70,8 @@ AUTH_TYPE = AUTH_DB
     # 'de': {'flag':'de', 'name':'German'},
     # 'zh': {'flag':'cn', 'name':'Chinese'},
     # 'ru': {'flag':'ru', 'name':'Russian'},
-    # 'pl': {'flag':'pl', 'name':'Polish'}
-# }
+    'fa': {'flag':'ir', 'name':'Farsi'}
+}
 #---------------------------------------------------
 # Image and file configuration
 #---------------------------------------------------
@@ -89,16 +89,16 @@ IMG_UPLOAD_URL = '/static/uploads/'
 # Theme configuration
 # these are located on static/appbuilder/css/themes
 # you can create your own and easily use them placing them on the same dir structure to override
-#APP_THEME = "bootstrap-theme.css"  # default bootstrap
+APP_THEME = "bootstrap-theme.css"  # default bootstrap
 # APP_THEME = "cerulean.css"
 # APP_THEME = "amelia.css"
 # APP_THEME = "cosmo.css"
-# APP_THEME = "cyborg.css"  
+# APP_THEME = "cyborg.css"
 # APP_THEME = "flatly.css"
 # APP_THEME = "journal.css"
 # APP_THEME = "readable.css"
 # APP_THEME = "simplex.css"
-APP_THEME = "slate.css"   
+# APP_THEME = "slate.css"
 # APP_THEME = "spacelab.css"
 #APP_THEME = "united.css"
 # APP_THEME = "yeti.css"

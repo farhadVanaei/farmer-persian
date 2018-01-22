@@ -16,31 +16,31 @@ assoc_Farmer_field = Table('Farmer_field', Model.metadata,
 
 
 class Field(Model):
-    id = Column(Integer, primary_key=True)
-    kind = Column(String(450))
+    id = Column(Integer, primary_key=True,autoincrement=True)
+    kind = Column(String(450,collation='utf8_bin'))
 
     def __repr__(self):
         return self.kind
 
 
 class Location(Model):
-    id = Column(Integer, primary_key=True)
-    Country = Column(String(450))
-    State = Column(String(450))
-    City = Column(String(450))
-    Part = Column(String(450))
-    village = Column(String(450))
+    id = Column(Integer, primary_key=True,autoincrement=True)
+    Country = Column(String(450,collation='utf8_bin'))
+    State = Column(String(450,collation='utf8_bin'))
+    City = Column(String(450,collation='utf8_bin'))
+    Part = Column(String(450,collation='utf8_bin'))
+    village = Column(String(450,collation='utf8_bin'))
 
     def __repr__(self):
         return self.State + " - " + self.City + " - " + self.Part + " - " + self.village
 
 
 class Farmer(Model):
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True,autoincrement=True)
     username = Column(String(450))
     password = Column(String(450))
-    name = Column(String(450))
-    family = Column(String(450))
+    name = Column(String(450,collation='utf8_bin'))
+    family = Column(String(450,collation='utf8_bin'))
     mobile = Column(String(450))
     phone = Column(String(450))
     NationalNumber = Column(String(450))
@@ -54,7 +54,7 @@ class Farmer(Model):
 
 
 class Request(Model):
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True,autoincrement=True)
     Farmer_id = Column(Integer, ForeignKey('farmer.id'), nullable=False)
     Farmer_request = relationship("Farmer")
 

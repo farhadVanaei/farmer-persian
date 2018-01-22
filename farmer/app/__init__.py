@@ -1,6 +1,8 @@
 import logging
 from flask import Flask
-from flask.ext.appbuilder import SQLA, AppBuilder
+from app.index import MyIndexView
+from flask_appbuilder import SQLA, AppBuilder
+
 
 """
  Logging configuration
@@ -12,7 +14,7 @@ logging.getLogger().setLevel(logging.DEBUG)
 app = Flask(__name__)
 app.config.from_object('config')
 db = SQLA(app)
-appbuilder = AppBuilder(app, db.session)
+appbuilder = AppBuilder(app, db.session,indexview=MyIndexView)
 
 
 """

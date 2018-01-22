@@ -1,0 +1,186 @@
+# Persian translations for PROJECT.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-10-26 13:23+0000\n"
+"PO-Revision-Date: 2018-01-21 23:46-0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fa\n"
+"Language-Team: fa <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: app/templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+msgid "Farmer"
+msgstr "هزار میوه"
+
+msgid "User"
+msgstr "کشاورزان"
+
+msgid "Field"
+msgstr "محصولات"
+
+
+msgid "Profile"
+msgstr "مشخصات کاربری"
+
+msgid "Logout"
+msgstr "خروج"
+
+
+msgid "Welcome"
+msgstr " به هزار میوه خوش آمدید"
+
+msgid "Security"
+msgstr "تنظیمات امنیتی "
+
+msgid "Field Management"
+msgstr "مدیریت محصولات"
+
+msgid "No records found"
+msgstr "داده ای پیدا نشد"
+
+msgid "List Farmer"
+msgstr "لیست کشاورزان"
+
+msgid "Record Count"
+msgstr "تعداد داده یافت شده "
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Add Filter"
+msgstr "افزودن فیلتر "
+
+
+msgid "Add Farmer"
+msgstr "افزودن کشاورز"
+
+msgid "Username"
+msgstr "نام کاربری"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Family"
+msgstr "نام خانوادگی"
+
+msgid "Mobile"
+msgstr "تلفن همراه"
+
+msgid "Fields"
+msgstr "محصولات"
+
+msgid "Nationalnumber"
+msgstr "کد ملی"
+
+msgid "Phone"
+msgstr "تلفن ثابت"
+
+msgid "Email"
+msgstr "رایانامه"
+
+msgid "Location"
+msgstr "مکان"
+
+msgid "Password"
+msgstr "رمز عبور"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "First Name"
+msgstr "نام"
+
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+msgid "َUser Name"
+msgstr "نام کاربری"
+
+msgid "EMail"
+msgstr "رایانامه"
+
+msgid "Is Active?"
+msgstr "فعال"
+
+msgid "Role"
+msgstr "دسترسی"
+
+msgid "List Users"
+msgstr "لیست کاربران"
+
+msgid "Confirm Password "
+msgstr "تایید رمز عبور "
+
+msgid "User Name"
+msgstr "نام کاربری"
+
+msgid "List Roles"
+msgstr "لیست سطح دسترسی"
+
+msgid "User's Statistics"
+msgstr "آمار کاربران"
+
+msgid "Base Permissions"
+msgstr "دسترسی های پایه"
+
+msgid "Edit User"
+msgstr "تغییر اطلاعات کاربر"
+
+msgid "Reset my password"
+msgstr "تغییر رمز "
+
+msgid "Personal Info"
+msgstr "اطلاعات شخصی"
+
+msgid "Login ount"
+msgstr "تعداد دفعات ورود"
+
+msgid "User info"
+msgstr "اطلاعات کاربری"
+
+msgid "Your user information"
+msgstr "اطلاعات کاربر"
+
+msgid "Add a new record"
+msgstr "افزودن"
+
+msgid "Back"
+msgstr "بازگشت"
+
+msgid "Enter your login and password below:"
+msgstr "برای وارد شدن نام کاربری و رمز عبور خود را وارد کنید "
+
+msgid "Sign In"
+msgstr "ورود"
+
+msgid "Country"
+msgstr "کشور"
+
+msgid "State"
+msgstr "استان"
+
+msgid "City"
+msgstr "شهر"
+
+msgid "Part"
+msgstr "بخش"
+
+msgid "village"
+msgstr "روستا"
+
+msgid "kind"
+msgstr "محصول"
+

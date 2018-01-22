@@ -1,0 +1,99 @@
+
+{#{% extends "appbuilder/base.html" %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>هزار میوه </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/superslides.css') }}">
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.animate-enhanced.min.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ url_for('static',filename='js/jquery.superslides.js') }}" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true
+      });
+    });
+  </script>
+    <style>
+        .custom-panel
+        {
+            position: fixed;
+            right: 25%;
+            top: 30%;
+            padding:20px;
+            background-color: rgba(255,255,255,0.6);
+        }
+        .pointer
+        {
+            background-color: rgba(255,255,255,0.6);
+            margin: 20px;
+            color:black;
+            padding: 20px;
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+{% block content %}
+  <div id="slides">
+    <div class="slides-container">
+        <div style="direction: rtl">
+            <img src="{{ url_for('static',filename='img/1.jpg') }}" alt="Surly">
+            <div class="panel custom-panel">
+                <div class="panel-heading warning">
+                    <h1>
+                    به هزار میوه خوش آمدید
+                        </h1>
+                </div>
+                <div class="panel-body">
+                    <h4>
+                    ثبت نام در سامانه هزار میوه آغاز شد
+                        </h4>
+                </div>
+            </div>
+        </div>
+
+                <div style="direction: rtl">
+            <img src="{{ url_for('static',filename='img/3.jpg') }}"  alt="Surly">
+            <div class="panel custom-panel">
+                <div class="panel-heading">
+                    <h1>
+                    به هزار میوه خوش آمدید
+                        </h1>
+                </div>
+                <div class="panel-body">
+                    <h4>
+                    با هزار میوه از اخبار روز کشاورزی ایران باخبر باشید
+                        </h4>
+                </div>
+            </div>
+        </div>
+  <div style="direction: rtl">
+            <img src="{{ url_for('static',filename='img/2.jpg') }}" alt="Surly">
+            <div class="panel custom-panel">
+                <div class="panel-heading">
+                    <h1>
+                    به هزار میوه خوش آمدید
+                        </h1>
+                </div>
+                <div class="panel-body">
+                    <h3>برای ثبت نام به لینک زیر سر بزنید</h3>
+                    <a href="{{ url_for('UserView.add') }}">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="slides-navigation">
+      <a href="#" class="next pointer">بعدی </a>
+      <a href="#" class="prev pointer">قبلی </a>
+    </nav>
+  </div>
+{% endblock %}
+</body>
+</html>
