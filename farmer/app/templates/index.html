@@ -1,5 +1,5 @@
 
-{#{% extends "appbuilder/base.html" %}#}
+{% extends "appbuilder/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,37 +42,7 @@
 {% block content %}
   <div id="slides">
     <div class="slides-container">
-        <div style="direction: rtl">
-            <img src="{{ url_for('static',filename='img/1.jpg') }}" alt="Surly">
-            <div class="panel custom-panel">
-                <div class="panel-heading warning">
-                    <h1>
-                    به هزار میوه خوش آمدید
-                        </h1>
-                </div>
-                <div class="panel-body">
-                    <h4>
-                    ثبت نام در سامانه هزار میوه آغاز شد
-                        </h4>
-                </div>
-            </div>
-        </div>
 
-                <div style="direction: rtl">
-            <img src="{{ url_for('static',filename='img/3.jpg') }}"  alt="Surly">
-            <div class="panel custom-panel">
-                <div class="panel-heading">
-                    <h1>
-                    به هزار میوه خوش آمدید
-                        </h1>
-                </div>
-                <div class="panel-body">
-                    <h4>
-                    با هزار میوه از اخبار روز کشاورزی ایران باخبر باشید
-                        </h4>
-                </div>
-            </div>
-        </div>
   <div style="direction: rtl">
             <img src="{{ url_for('static',filename='img/2.jpg') }}" alt="Surly">
             <div class="panel custom-panel">
@@ -83,16 +53,11 @@
                 </div>
                 <div class="panel-body">
                     <h3>برای ثبت نام به لینک زیر سر بزنید</h3>
-                    <a href="{{ url_for('UserView.add') }}">ثبت نام</a>
+                    <a href="{{ url_for('UserView.add') }}"><button class="btn">ثبت نام</button></a>
                 </div>
             </div>
         </div>
     </div>
-
-    <nav class="slides-navigation">
-      <a href="#" class="next pointer">بعدی </a>
-      <a href="#" class="prev pointer">قبلی </a>
-    </nav>
   </div>
 {% endblock %}
 </body>
