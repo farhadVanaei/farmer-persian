@@ -22,7 +22,7 @@ class locationView(ModelView):
                      'Part':_('Part'),
                      'village':_('village')
                      }
-    
+    list_columns = [ 'Country','State','City','Part','village']
     datamodel = SQLAInterface(Location)
 
 class UserView(ModelView):

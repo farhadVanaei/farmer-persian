@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e4302c-25da-494e-a89e-6a440bc2cf9f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/farmer/app/models.py" afterPath="$PROJECT_DIR$/farmer/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/farmer/app/views.py" afterPath="$PROJECT_DIR$/farmer/app/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/farmer/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -66,8 +65,8 @@
       <list>
         <option value="$PROJECT_DIR$/farmer/app/templates/index.html" />
         <option value="$PROJECT_DIR$/farmer/app/translations/fa/LC_MESSAGES/messages.po" />
-        <option value="$PROJECT_DIR$/farmer/app/views.py" />
         <option value="$PROJECT_DIR$/farmer/app/models.py" />
+        <option value="$PROJECT_DIR$/farmer/app/views.py" />
       </list>
     </option>
   </component>
@@ -257,7 +256,7 @@
     <entry file="file://$PROJECT_DIR$/farmer/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
           <folding />
         </state>
       </provider>
