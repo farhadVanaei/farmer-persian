@@ -37,8 +37,6 @@ class Location(Model):
 
 class Farmer(Model):
     id = Column(Integer, primary_key=True,autoincrement=True)
-    username = Column(String(450))
-    password = Column(String(450))
     name = Column(String(450,collation='utf8_bin'))
     family = Column(String(450,collation='utf8_bin'))
     mobile = Column(String(450,collation='utf8_bin'))

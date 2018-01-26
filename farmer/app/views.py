@@ -22,6 +22,7 @@ class locationView(ModelView):
                      'Part':_('Part'),
                      'village':_('village')
                      }
+    
     datamodel = SQLAInterface(Location)
 
 class UserView(ModelView):
