@@ -31,6 +31,7 @@ class UserView(ModelView):
                      'family':_('Family'),
                      'mobile':_('Mobile'),
                      'fields':_('Fields'),
+                     'fathername':_('fathername'),
                      'NationalNumber':_('Nationalnumber'),
                      'phone':_('Phone'),
                      'Location ':_('Location'),

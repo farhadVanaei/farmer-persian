@@ -184,3 +184,7 @@ msgstr "روستا"
 msgid "kind"
 msgstr "محصول"
 
+
+msgid "fathername"
+msgstr "نام پدر"
+
